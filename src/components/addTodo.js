@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
 
 @inject('todo')
-@observer
+@observer // 当TODO发生变化时 更新组件视图
 class AddTodo extends Component {
   // 添加任务
   addTodo (event) {
